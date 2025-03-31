@@ -7,24 +7,81 @@
 </head>
 <body>
  <header>
-    <h1>Jamara's Pizza</h1>
+    <h2>Jamara's Pizza</h2>
 </header>
  <main>
     <h2>Order Form</h2>
-    <form>
-        <label form="first-last-name"></label>
-        <br>
 
-   <input type="text" name="First-Last-Name" id="First-Last-name">   
-   <br>
-   <label form="pizza size"</label>
-   <input type="checkbox" name="Pizza Size" id="small">
+    <form>
+        <label for="fname">First name:</label>
+        <input type="text" name="fname" id="fname">
+
+        <label for="lname">Last name</label>
+        <input type="text" name="lname" id="lname">
+    
+<h2>Pizza Size</h2>
+
+
+   <label for="Pizza">Pizza Size</label>
+   <select name="Pizza" id="Pizza">
+    <option value="Small">Small</option>
+    <option value="Medium">Medium</option>
+    <option value="Large">Large</option>
+   </select>
+
+<h2>Toppings</h2>
+
+<input type="checkbox" name="Toppings1" id="Topping" value="pepperoni" />
+<label for="Toppings1">Pepperoni</label><br>
+<input type="checkbox" name="Toppings2" id="Toppings2"value="Mushrooms">
+<label for="Toppings2">Mushrooms</label><br>
+<input type="checkbox" name="Toppings3" id="Toppings3"value="Extra Cheese">
+<label for="Toppings3">Extra Cheese</label><br>
+<input type="checkbox" name="Toppings4" id="Toppings4"value="onions">
+<label for="Toppings4">Onions</label><br>
+<input type="checkbox" name="Toppings5" id="Toppings5"value="Peppers">
+<label for="Toppings5">Peppers</label><br>
+<br>
+<h3 for="Instructions">Instructions</h3>
+<textarea name="Instructions" id="Instructions"></textarea>
+<br>
+<input type="submit" value="Submit"/> 
+
 <br>
 
+ </form>
 
-    </form>
+ <table>
+    <tr>
+        <th>Name</th>
+        <th>Size</th>
+        <th>Toppings</th>
+        <th>Special instructions</th>
+    </tr>
+    
+    <tr>
+        <td>Camara</td>
+        <td>Large</td>
+        <td>pepperoni</td>
+        <td>Extra Pepperoni</td>
+    </tr>
+    <tr>
+        <td>Alex</td>
+        <td>Medium</td>
+        <td>Pepperoni, Extras Cheese</td>
+        <td>Cut into thin slices</td>
+    </tr>
+    <tr>
+        <td>Cj</td>
+        <td>Small</td>
+        <td>Extra Cheese</td>
+        <td>Only Cheese</td>
+    </tr>
+ </table>
+
  </main>
- <footer>
+
+ <footer> 
     <p>©March 2025</p></footer>   
 </body>
 </html>
